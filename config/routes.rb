@@ -7,4 +7,6 @@ Rails.application.routes.draw do
     resources :comments, only:[:new, :create]
   end
   # newのformにおいてpostのurlを指定しなければいけないから:createを記述した
+
+  resource :profile, only: [:show, :edit, :update]
 end
